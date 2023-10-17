@@ -55,6 +55,10 @@ header {
     white-space: nowrap; /* Evita quebra de linha */
 }
 
+.menu nav a:hover{
+    color: black;
+}
+
 .background-image {
     top: 0;
     left: 0;
@@ -159,9 +163,6 @@ header {
 
 .text3{
     display: inline-block;
-<<<<<<< Updated upstream:pifrontend/stylehome.css
-}
-=======
 }
 
 .dropdown-menu{
@@ -170,11 +171,14 @@ header {
     background-color: #364bae;
     flex-direction: column;
     display: none;
+    top: 100%;
+    border: block;
 }
 
 .dropdown-menu a{
     color: black;
     display: inline-block;
+
 }
 
 .dropdown:hover .dropdown-menu{
@@ -186,7 +190,6 @@ header {
     align-items: center;
     display: flex;
     box-sizing: border-box;
-    box-shadow: none;
 
 }
 
@@ -207,7 +210,7 @@ header {
 }
 
 .menu nav ul li{
-    display: inline-block;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -216,7 +219,29 @@ header {
     font-size: 11;
 }
 
-.primario{
-    background-color: white;
-}
->>>>>>> Stashed changes:pi_frontend_apae-main/pi_frontend_apae-main/pifrontend/stylehome.css
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Torna a lista um flex container */
+
+  }
+  
+nav li {
+    position: relative;
+    margin-right: 20px; /* Espaçamento entre os itens do menu */
+    
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+  }
+
+  
+  
+  
+  
+  
+  
