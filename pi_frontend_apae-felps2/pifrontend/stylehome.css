@@ -28,6 +28,7 @@
 
 header {
     background-color: #364bae;
+    position: flex;
 }
 
 .logo {
@@ -78,16 +79,23 @@ header {
 
 .text{
     opacity: 1;
-    position: relative;
-    max-width: 600px;
-    margin-right: 20px;
-    margin-left: 50px;
+    position: absolute;
+    top: 20%;
+    right: 1%;
+
+    max-width: 400px;
+    margin-left: 0px;
+    margin-right: 0px;
     white-space: nowrap;
 
     display: inline-block;
     width: 100%;
     align-items: center;
     justify-content: space-between;
+
+    background-color: white;
+    border: 5px solid; /* As 4 bordas sólidas com 25px de espessura */
+    border-color: #FF8C00; /* cores: topo, direita, inferior, esquerda */
 }
 
 .text h2{
@@ -115,6 +123,7 @@ header {
 
 .text2{
     display: inline-block;
+    margin-top: 10%;
 }
 
 .text2 h2{
@@ -272,6 +281,20 @@ footer .footer-container li{
 footer .footer-container a{
     color: white;
 }
+
+.entry-video {
+    background: #EE82EE;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 10%;
+    margin-bottom: 10%;
+
+    border-radius: 15%;
+}
+
 
 
   
