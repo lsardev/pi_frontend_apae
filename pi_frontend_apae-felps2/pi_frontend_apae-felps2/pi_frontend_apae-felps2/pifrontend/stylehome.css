@@ -19,7 +19,7 @@
 
 .navbar {
     max-width: 1080px;
-    margin: 0 auto;
+    margin:  auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -37,7 +37,7 @@ header {
     align-items: center;
     margin-right: 20px;
 }
-
+.navbar
 .menu {
     width: 50%;
 }
@@ -51,13 +51,14 @@ header {
 .menu nav a {
     color: #ffffff;
     text-decoration: none;
-    padding: 0 20px;
+    padding: 5px 20px;
     font-size: 18px;
     white-space: nowrap; /* Evita quebra de linha */
 }
 
 .menu nav a:hover{
-    color: black;
+    color: #ffffff;
+    background: #FFDC00;
 }
 
 .background-image {
@@ -250,6 +251,7 @@ nav a {
 
 footer{
     background-color: #364bae;
+    border-top: 2px solid #364bae;
 }
 
 footer .footer-container{
@@ -295,11 +297,60 @@ footer .footer-container a{
     border-radius: 15%;
 }
 
+/* body{ */
+    /* margin: 0; */
+    /* height: 100vh; */
+    /* width: 100vw; */
+    /* background: linear-gradient(#79e4a6, #1bc296); */
+/* } */
 
+.search-box{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    background: white;
+    height: 40px;
+    padding: 10px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: black;
+    font-size: 16px;
+    line-height: 40px;
+    width: 1;
+    /* width 0 deixa so a bussola, quando mouse passa em cima abre */
+    /*transition: .5s;*/
+}
+::-webkit-input-placeholder{
+    color: black;
+}  
+.search-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #FFDC00;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    /*transition: .5s;*/
+} 
+  
+.search-box:hover > .search-txt{
+    width: 220px;
+    padding: 0 6px;
+}
+
+.search-box:hover > .search-btn{
+    background: #FFDC00;
+}
 
   
-  
-  
-  
-  
-  
+ 
