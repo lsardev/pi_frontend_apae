@@ -12,13 +12,13 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #ecf0f1;
+    background-color: transparent ;
 }
 .content {
     background-color: #F4DB33;
     border-radius: 15px;
-    width: 960px;
-    height: 50%;
+    width: 900px;
+    height: 55%;
     justify-content: space-between;
     align-items: center;
     position: relative;
@@ -74,6 +74,7 @@ body {
     background-color: transparent;
     border: 1px solid #81B266;
     transition: background-color .5s;
+    padding: 10px;
 }
 .btn-primary:hover {
     background-color: #F4DB33;
@@ -85,6 +86,8 @@ body {
     border: 1px solid #81B266;
     transition: background-color .5s;
     color: #2C4FBC;
+    padding: 10px;
+    
 }
 .btn-second:hover {
     background-color: #2C4FBC;
