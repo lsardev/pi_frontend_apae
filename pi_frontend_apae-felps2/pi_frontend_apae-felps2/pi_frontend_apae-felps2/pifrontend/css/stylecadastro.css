@@ -89,6 +89,15 @@ body {
     padding: 10px;
     
 }
+.btn-third{
+    background-color: #F4DB33;
+    border: 1px solid #81B266;
+    transition: background-color .5s;
+    color: #2C4FBC;
+    padding: 10px;
+    text-align: center;
+
+}
 .btn-second:hover {
     background-color: #2C4FBC;
     border: 1px solid #58af9b;
@@ -292,7 +301,7 @@ input:-webkit-autofill
     50% {
         left: 100px;
         /* z-index: 12; NÃO HÁ NECESSIDADE*/
-        /* background-color: yellow;  Exemplo que dei no vídeo*/
+        /* background-color: yellow; */
     }
 
     to {
@@ -438,7 +447,7 @@ input:-webkit-autofill
         50% {
             top: 100px;
             /* z-index: 12; NÃO HÁ NECESSIDADE*/
-            /* background-color: yellow;  Exemplo que dei no vídeo*/
+            /* background-color: yellow;*/
         }
     
         to {
