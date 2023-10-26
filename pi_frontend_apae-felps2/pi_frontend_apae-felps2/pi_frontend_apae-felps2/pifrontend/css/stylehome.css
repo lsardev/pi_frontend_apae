@@ -17,26 +17,19 @@
     clip-path: circle(50% at bottom right);
 }
 
-.navbar {
+.navbar{
     max-width: 1080px;
-    margin:  auto;
+    margin-right:  auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
 }
-
 header {
     background-color: #364bae;
     position: flex;
 }
 
-.logo {
-    width: 25%;
-    display: flex;
-    align-items: center;
-    margin-right: 20px;
-}
 .navbar
 .menu {
     width: 50%;
@@ -306,10 +299,10 @@ footer .footer-container a{
 
 .search-box{
     position: absolute;
-    top: 5%;
-    left: 5%;
+    top: 7%;
+    left: 85%;
     background: white;
-    height: 40px;
+    height: 35px;
     padding: 10px;
     border-radius: 40px;
     display: flex;
@@ -324,7 +317,7 @@ footer .footer-container a{
     padding: 0;
     color: black;
     font-size: 16px;
-    line-height: 40px;
+    line-height: 10px;
     width: 1;
     /* width 0 deixa so a bussola, quando mouse passa em cima abre */
     /*transition: .5s;*/
@@ -351,6 +344,3 @@ footer .footer-container a{
 .search-box:hover > .search-btn{
     background: #FFDC00;
 }
-
-  
- 
