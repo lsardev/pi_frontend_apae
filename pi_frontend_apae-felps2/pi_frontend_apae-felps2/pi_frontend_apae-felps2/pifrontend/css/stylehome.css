@@ -7,6 +7,7 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+
 .circle{
     position: absolute;
     top: 0;
@@ -25,8 +26,14 @@
     justify-content: space-between;
     padding: 10px;
 }
-header {
+.header1 {
     background-color: #364bae;
+    position: flex;
+    z-index: 2;
+}
+
+.subheader {
+    background-color: #FFDC00;
     position: flex;
 }
 
@@ -193,6 +200,7 @@ header {
     align-items: center;
     display: flex;
     box-sizing: border-box;
+    z-index: 2;
 
 }
 
@@ -204,6 +212,7 @@ header {
     font-size: 18px;
     white-space: nowrap;
     align-items: center;
+
 }
 
 .dropdown{
@@ -299,8 +308,8 @@ footer .footer-container a{
 
 .search-box{
     position: absolute;
-    top: 7%;
-    left: 85%;
+    top: 20%;
+    left: 70%;
     background: white;
     height: 35px;
     padding: 10px;
@@ -329,7 +338,7 @@ footer .footer-container a{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: #FFDC00;
+    background: #364bae;
     justify-content: center;
     display: flex;
     align-items: center;
@@ -337,10 +346,72 @@ footer .footer-container a{
 } 
   
 .search-box:hover > .search-txt{
-    width: 220px;
+    width: 150px;
     padding: 0 6px;
 }
 
 .search-box:hover > .search-btn{
-    background: #FFDC00;
+    background: #364bae;
+}
+
+.donate-button {
+    background-color: #00FF7F; /* Cor de fundo do botão */
+    color: black; /* Cor do texto no botão */
+    padding: 20px 30px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 180px;
+}
+
+/* Estilos para a lista de imagens */
+.image-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    transition: transform 1.0s;
+}
+
+/* Estilos para cada item de imagem */
+.image-list-item {
+    flex: 0 0 2000px;
+    z-index: 1;
+}
+
+/* Estilos para o contêiner do carrossel */
+.carousel-container {
+    width: 100%;
+    height: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+/* Estilos para a lista de imagens */
+.image-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    transition: transform 0.5s;
+}
+
+/* Estilos para cada item de imagem */
+.image-list-item {
+    flex: 0 0 1000px;
+    position: relative; /* Certifique-se de que a posição seja definida como relativa */
+    z-index: 1; /* Defina um z-index maior para as imagens */
+
+}
+   
+.start-sentence{
+    position: absolute;
+    top: 200px; /* Distância a partir do topo */
+    left: 20px; /* Distância a partir da esquerda */
+    background-color: #FFDC00;
+    color: #364bae;
+    padding: 10px;
+    z-index: 2;
 }

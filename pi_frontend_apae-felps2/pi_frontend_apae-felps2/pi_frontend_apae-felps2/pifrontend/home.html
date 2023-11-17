@@ -5,16 +5,12 @@
     <title>Doc</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/stylehome.css">
-
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
-    <header>
-        <div class="search-box">
-            <input type="text" class="search-txt" placeholder="Pesquisar">
-            <a href="#" class="search-btn">
-                <img src="img/loupe.svg" alt="Lupa" height="20" width="20">
-            </a>
-        </div>
+
+
+    <header class="header1">
         <div class="navbar">
             <a href="http://127.0.0.1:5500/pi_frontend_apae-felps2/pifrontend/home.html">
                 <div class="logo"><img src="img/apae_logo.png" width="200" height="100"></div>
@@ -109,7 +105,7 @@
                             </div>
                         </li>
                         <li class="dropdown">
-                            <a href="#">LOJINHA</a>
+                            <a href="lojinha/lojinha2.html">LOJINHA</a>
 
                             <div class="dropdown-menu">
                     
@@ -121,15 +117,68 @@
         </div>
     </header>
 
+    <header class="subheader">
+        <div>
+            <div class="search-box">
+                <input type="text" class="search-txt" placeholder="Pesquisar">
+                <a href="#" class="search-btn">
+                    <img src="img/loupe.svg" alt="Lupa" height="20" width="20">
+                </a>
+            </div>
+
+            <button class="donate-button">Doe Aqui</button>
+        </div>
+    </header>
 
     <article>
-        <div class="background-image">
-            <div class="text">
-                <h2>Bem Vindo a APAE</h2>
-                <p>A APAE São Caetano É <br>Mais Do Que Você Imagina</br></p>
-            </div>
-        </div>
+        <section>
+            <p class="start-sentence">A APAE São Caetano é muito mais do que você imagina !</p>
+            <section class="carousel-container">
+                <ul class="image-list">
+                    <li class="image-list-item"><img src="img/apaeinicioteste2.jpg" alt="Imagem 1" width="2000" height="1000"></li>
+                    <li class="image-list-item"><img src="img/apae_imagem2.jpg" alt="Imagem 2" width="2000" height="1000"></li>
+                    <li class="image-list-item"><img src="img/apae_imagem1.jpg" alt="Imagem 3" width="2000" height="1000"></li>
+                    <!-- Adicione mais imagens conforme necessário -->
+                </ul>
+            </section>
+        </section>
     </article>
+
+    
+
+    <script>
+        const imageList = document.querySelector(".image-list");
+        const imageItems = document.querySelectorAll(".image-list-item");
+
+        let currentIndex = 0;
+        const interval = 1500; // Tempo em milissegundos entre cada transição (3 segundos)
+
+        function moveToImage(index) {
+            if (index < 0) {
+                index = imageItems.length - 1;
+            } else if (index >= imageItems.length) {
+                index = 0;
+            }
+
+            const translateX = -index * 2250; // Largura de cada imagem (ajuste conforme necessário)
+            imageList.style.transform = `translateX(${translateX}px)`;
+            currentIndex = index;
+        }
+
+        function nextImage() {
+            moveToImage(currentIndex + 1);
+        }
+
+        function prevImage() {
+            moveToImage(currentIndex - 1);
+        }
+
+        // Configurar a transição automática
+        setInterval(nextImage, interval);
+    </script>
+
+
+
 
     <article>
         <div class="text2">
@@ -139,7 +188,7 @@
 
                 <div class="text3">
                     <h2>Sobre a APAE:</h2>
-
+            
                     <p>
                         Fundada em 10 de junho de 1964, a Associação de Pais e Amigos dos Excepcionais de São Caetano do Sul, <br> 
                     APAE, é uma entidade filantrópica, que presta atendimento a pessoas com deficiência, <br>
@@ -153,6 +202,7 @@
             </div>
         </div>
     </article>
+
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
@@ -163,13 +213,14 @@
       <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
       </script>
+
     <article>
         <div class="entry-video">
             <div class="">
                 <h2>Video institucional - APAE São Caetano do Sul</h2>
                 <p>Saiba mais sobre o que fazemos aqui na APAE-SCS</p>
             </div>
-            <video src="videos/apae_video.mp4" controls width="780" height="390" autoplay></video>
+            <video src="videos/apae_video.mp4" controls width="780" height="390"></video>
         </div>
     </article>
     
